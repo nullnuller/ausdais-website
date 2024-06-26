@@ -109,12 +109,15 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #00274d;
+    padding: 2em;
+    border-radius: 10px;
 }
 
 .service-box,
 .product-box {
-    background-color: #00274d;
-    color: white;
+    background-color: white;
+    color: #00274d;
     padding: 1em;
     border-radius: 5px;
     width: 200px;
@@ -123,9 +126,10 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.service-box img,
 .product-box img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 1em;
 }
