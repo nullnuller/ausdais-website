@@ -88,6 +88,7 @@ section {
 }
 
 #about button,
+#services .service-box button,
 #products .product-box {
     background-color: #0056b3;
     color: white;
@@ -98,6 +99,7 @@ section {
 }
 
 #about button:hover,
+#services .service-box button:hover,
 #products .product-box:hover {
     background-color: #003d80;
 }
@@ -111,9 +113,9 @@ section {
 
 .service-box,
 .product-box {
-    background-color: white;
+    background-color: #00274d;
+    color: white;
     padding: 1em;
-    border: 1px solid #ddd;
     border-radius: 5px;
     width: 200px;
     margin: 1em;
@@ -121,7 +123,6 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.service-box img,
 .product-box img {
     width: 100px;
     height: 100px;
@@ -132,13 +133,10 @@ footer {
     background-color: #00274d;
     color: white;
     text-align: center;
-    padding: 2em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 2em 0;
 }
 
-.footer-container {
+.footer-top {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
@@ -169,4 +167,9 @@ footer {
 
 .footer-column ul li a:hover {
     text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #0056b3;
+    padding-top: 1em;
 }
