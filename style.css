@@ -2,28 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #00274d;
     color: white;
     padding: 1em;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1em;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.login-button {
+    background-color: #0056b3;
 }
 
 main {
@@ -32,10 +49,70 @@ main {
 
 section {
     margin-bottom: 2em;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2em;
+    color: #0056b3;
+}
+
+#home button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #003d80;
+}
+
+#about h2,
+#services h2,
+#products h2 {
+    color: #0056b3;
+}
+
+#about p {
+    margin: 1em 0;
+}
+
+#about button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about button:hover {
+    background-color: #003d80;
+}
+
+.services-container,
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box,
+.product-box {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    margin: 1em;
+    text-align: center;
 }
 
 footer {
-    background-color: #333;
+    background-color: #00274d;
     color: white;
     text-align: center;
     padding: 1em;
