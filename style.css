@@ -123,9 +123,11 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.service-box img,
 .product-box img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
     margin-bottom: 1em;
 }
 
