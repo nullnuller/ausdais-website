@@ -52,14 +52,19 @@ section {
     text-align: center;
 }
 
+#home {
+    background-color: #0056b3;
+    color: white;
+    padding: 3em 0;
+}
+
 #home h2 {
     font-size: 2em;
-    color: #0056b3;
 }
 
 #home button {
-    background-color: #0056b3;
-    color: white;
+    background-color: white;
+    color: #0056b3;
     border: none;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -68,6 +73,12 @@ section {
 
 #home button:hover {
     background-color: #003d80;
+    color: white;
+}
+
+#about {
+    background-color: #f1f1f1;
+    padding: 2em 0;
 }
 
 #about h2,
@@ -76,11 +87,8 @@ section {
     color: #0056b3;
 }
 
-#about p {
-    margin: 1em 0;
-}
-
-#about button {
+#about button,
+#products .product-box {
     background-color: #0056b3;
     color: white;
     border: none;
@@ -89,7 +97,8 @@ section {
     cursor: pointer;
 }
 
-#about button:hover {
+#about button:hover,
+#products .product-box:hover {
     background-color: #003d80;
 }
 
@@ -109,6 +118,14 @@ section {
     width: 200px;
     margin: 1em;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-box img,
+.product-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
 }
 
 footer {
