@@ -84,7 +84,7 @@ nav ul li a {
 
 /* Main Section Styles */
 main {
-    padding-top: 80px;
+    padding-top: 100px; /* Ensure content is not occluded by fixed header */
 }
 
 section {
@@ -221,7 +221,7 @@ section {
 
 .product .btn {
     background: var(--sapphire);
-    color: var(--white);
+    color: var (--white);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
