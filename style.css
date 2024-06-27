@@ -332,8 +332,24 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var (--white);
+    color: var(--white);
     text-decoration: none;
+}
+
+/* Research Page Image Styling */
+.research-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.research-section img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.research-section .research-content {
+    flex: 1;
 }
 
 /* Responsive Design */
@@ -342,6 +358,15 @@ footer {
     .services-grid,
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .research-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .research-section img {
+        margin: 0 auto 20px;
     }
 }
 
