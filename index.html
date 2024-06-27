@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logoblue.png" alt="AusDAIS Logo">
+                <img src="images/logoblue.png" alt="AusDAIS Logo">
             </div>
             <nav>
                 <ul>
@@ -19,40 +18,18 @@
                     <li class="dropdown">
                         <a href="#about">About</a>
                         <ul class="dropdown-content">
-                            <li><a href="#about-ausdais">About AusDAIS</a></li>
-                            <li><a href="#sustainability">Sustainability</a></li>
-                            <li><a href="#career">Career</a></li>
-                            <li><a href="#investors">Investors and Partners</a></li>
-                            <li><a href="#board">Board of Directors</a></li>
-                            <li><a href="#advisors">Advisors and Consultants</a></li>
+                            <li><a href="about.html#about-ausdais">About AusDAIS</a></li>
+                            <li><a href="about.html#sustainability">Sustainability</a></li>
+                            <li><a href="about.html#career">Career</a></li>
+                            <li><a href="about.html#investors">Investors and Partners</a></li>
+                            <li><a href="about.html#board">Board of Directors</a></li>
+                            <li><a href="about.html#advisors">Advisors and Consultants</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#research">Research</a>
-                        <div class="dropdown-content research-grid">
-                            <a href="#industry">Industry</a>
-                            <a href="#society">Society</a>
-                            <a href="#climate">Climate & Environment</a>
-                            <a href="#cybersecurity">Cybersecurity</a>
-                            <a href="#renewable-energy">Renewable Energy</a>
-                            <a href="#supply-chain">Supply Chain Solution</a>
-                            <a href="#oil-gas">Oil & Gas</a>
-                            <a href="#health">Health & Well-being</a>
-                            <a href="#operational-excellence">Operational Excellence</a>
-                            <a href="#biotechnology">Biotechnology</a>
-                            <a href="#digitalization">Digitalization</a>
-                            <a href="#building">Building and Infrastructure</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#services">Services</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#student-services">Student services</a></li>
-                            <li><a href="#data-consultancy">Data Consultancy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="login">
@@ -62,50 +39,80 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="hero">
-            <h1>AUSTRALIAN DATA ANALYTICS AND INNOVATIVE SOLUTIONS</h1>
-            <button>READ MORE</button>
+            <div class="hero-content">
+                <img src="images/A_professional_data_analytics_team_working_collabo.png" alt="AusDAIS Hero Image" class="hero-image">
+                <h1>AUSTRALIAN DATA ANALYTICS AND INNOVATIVE SOLUTIONS</h1>
+                <button>READ MORE</button>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>WHO WE ARE?</h2>
-            <p>With roots in both academia and research communities, AusDAIS has always been devoted to simplifying data, sharing knowledge and pursuing innovation. Founded in Australia, AusDAIS brings together data engineering, science and analytics to solve present and future challenges.</p>
-            <button>READ MORE</button>
+        <!-- Services Overview -->
+        <section id="services-overview">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Data Consultancy</h3>
+                    <p>Providing expert data consultancy services to help businesses make data-driven decisions.</p>
+                    <a href="services.html#data-consultancy">Learn More</a>
+                </div>
+                <div class="service">
+                    <h3>Student Services</h3>
+                    <p>Offering comprehensive support for students pursuing careers in data analytics.</p>
+                    <a href="services.html#student-services">Learn More</a>
+                </div>
+            </div>
         </section>
 
-        <section id="products">
-            <h2>OUR PRODUCTS</h2>
+        <!-- Products Overview -->
+        <section id="products-overview">
+            <h2>Our Products</h2>
             <div class="product-grid">
-                <a href="https://ausdais.com/crimo/" class="product">
-                    <img src="handcuffs-1.svg" alt="CRIMO">
+                <div class="product">
+                    <img src="images/handcuffs-1.svg" alt="CRIMO">
                     <h3>CRIMO (TM)</h3>
                     <p>Crime Intelligence and Monitoring</p>
-                </a>
-                <a href="https://ausdais.com/agrosense/" class="product">
-                    <img src="terpene.svg" alt="AgroSense">
+                    <a href="https://ausdais.com/crimo/">Learn More</a>
+                </div>
+                <div class="product">
+                    <img src="images/terpene.svg" alt="AgroSense">
                     <h3>AgroSense (TM)</h3>
                     <p>Agricultural IOT Sensor Dashboard</p>
-                </a>
-                <a href="#" class="product">
-                    <img src="fake.png" alt="FakeDetect">
-                    <h3>FakeDetect (TM)</h3>
-                    <p>Fake News Detector</p>
-                </a>
-                <a href="#" class="product">
-                    <img src="factory-1.svg" alt="AWPM">
-                    <h3>AWPM (TM)</h3>
-                    <p>Air and Water Pollution Monitoring</p>
-                </a>
-                <a href="#" class="product">
-                    <img src="fire.svg" alt="FirePredict">
-                    <h3>FirePredict (TM)</h3>
-                    <p>Bush Fire Prediction and Analysis</p>
-                </a>
-                <a href="#" class="product">
-                    <img src="covid-19.png" alt="CovMap">
-                    <h3>CovMap (TM)</h3>
-                    <p>Covid Heatmap Analysis</p>
-                </a>
+                    <a href="https://ausdais.com/agrosense/">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"AusDAIS provided us with invaluable data insights that transformed our business operations."</p>
+                <img src="images/client1.jpg" alt="Client 1">
+                <p>- Client Name</p>
+            </div>
+            <div class="testimonial">
+                <p>"The expertise and support from AusDAIS were crucial in achieving our project goals."</p>
+                <img src="images/client2.jpg" alt="Client 2">
+                <p>- Client Name</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <p>Address: 123 Data St, Melbourne, Australia</p>
+                <p>Email: info@ausdais.com</p>
+                <p>Phone: +61 3 1234 5678</p>
+                <img src="images/map.png" alt="Map">
             </div>
         </section>
     </main>
@@ -113,7 +120,7 @@
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="logogreen.png" alt="AusDAIS Logo">
+                <img src="images/logoblue.png" alt="AusDAIS Logo">
                 <p>AUSTRALIAN DATA ANALYTICS AND INNOVATIVE SOLUTIONS PTY</p>
                 <p>ACN: 643823741</p>
             </div>
@@ -121,21 +128,21 @@
                 <div>
                     <h4>Learn More</h4>
                     <ul>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#industries">Industries</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Get In Touch</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Get In Touch</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Important Links</h4>
                     <ul>
-                        <li><a href="#sustainability">Sustainability</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                        <li><a href="#investors">Investors & Partners</a></li>
-                        <li><a href="#board">Board of Directors</a></li>
-                        <li><a href="#advisors">Advisors & Consultants</a></li>
+                        <li><a href="about.html#sustainability">Sustainability</a></li>
+                        <li><a href="about.html#career">Careers</a></li>
+                        <li><a href="about.html#investors">Investors & Partners</a></li>
+                        <li><a href="about.html#board">Board of Directors</a></li>
+                        <li><a href="about.html#advisors">Advisors & Consultants</a></li>
                     </ul>
                 </div>
                 <div>
