@@ -1,9 +1,10 @@
 /* Color scheme */
 :root {
-    --primary-color: #0056b3;
-    --secondary-color: #f4f4f4;
-    --text-color: #333;
-    --white: #fff;
+    --sapphire: #0F52BA;
+    --midnight-blue: #191970;
+    --white: #ffffff;
+    --light-gray: #f4f4f4;
+    --text-color: #333333;
 }
 
 /* Header Styles */
@@ -15,6 +16,36 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul li {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
 }
 
 /* Products Section */
@@ -32,7 +63,7 @@ header {
 }
 
 .product {
-    background: var(--primary-color);
+    background: var(--sapphire);
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -57,7 +88,7 @@ header {
 
 /* Footer Styles */
 footer {
-    background: var(--primary-color);
+    background: var(--midnight-blue);
     color: var(--white);
     padding: 40px 0;
 }
