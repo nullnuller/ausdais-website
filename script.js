@@ -1,4 +1,3 @@
-// JavaScript functionality if needed
 // script.js
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -23,13 +22,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('nav').classList.toggle('show');
     });
 
-    // Add some animation to products on scroll
+    // Header scroll effect
+    const header = document.querySelector('header');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.style.top = '-80px';
+        } else {
+            header.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+
+    // Add animation class to products when they come into view
     const products = document.querySelectorAll('.product');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('show');
+                entry.target.classList.add('animate');
             }
         });
     }, { threshold: 0.1 });
