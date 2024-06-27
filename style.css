@@ -51,7 +51,7 @@ nav ul li {
 /* Products Section */
 #products {
     padding: 50px 0;
-    background: var(--secondary-color);
+    background: var(--sapphire);
 }
 
 .product-grid {
