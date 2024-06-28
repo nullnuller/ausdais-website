@@ -25,7 +25,7 @@ body {
 header {
     background: var(--midnight-blue);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* Reduced padding for smaller header */
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,7 +34,7 @@ header {
 }
 
 header .logo img {
-    max-width: 100px;
+    max-width: 80px; /* Reduced logo size */
 }
 
 nav ul {
@@ -78,13 +78,13 @@ nav ul li a {
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+nav ul li:hover .dropdown-content {
     display: block;
 }
 
 /* Main Section Styles */
 main {
-    padding-top: 100px; /* Ensure content is not occluded by fixed header */
+    padding-top: 80px; /* Ensure content is not occluded by fixed header */
 }
 
 section {
@@ -221,7 +221,7 @@ section {
 
 .product .btn {
     background: var(--sapphire);
-    color: var (--white);
+    color: var(--white);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
@@ -337,18 +337,21 @@ footer {
 }
 
 /* Research Page Image Styling */
-.research-section {
+.research-section,
+.about-section {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.research-section img {
+.research-section img,
+.about-section img {
     max-width: 300px;
     margin-right: 20px;
 }
 
-.research-section .research-content {
+.research-section .research-content,
+.about-section .about-content {
     flex: 1;
 }
 
@@ -360,12 +363,14 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .research-section {
+    .research-section,
+    .about-section {
         flex-direction: column;
         text-align: center;
     }
 
-    .research-section img {
+    .research-section img,
+    .about-section img {
         margin: 0 auto 20px;
     }
 }
