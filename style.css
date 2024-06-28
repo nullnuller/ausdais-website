@@ -25,7 +25,7 @@ body {
 header {
     background: var(--midnight-blue);
     color: var(--white);
-    padding: 0.5rem 0;
+    padding: 0.5rem 0; /* Reduced padding for smaller header */
     position: fixed;
     width: 100%;
     top: 0;
@@ -34,7 +34,7 @@ header {
 }
 
 header .logo img {
-    max-width: 80px;
+    max-width: 80px; /* Reduced logo size */
 }
 
 nav ul {
@@ -54,11 +54,12 @@ nav ul li a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
 }
 
-nav ul li:hover .dropdown-content {
-    display: block;
+.login a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 .dropdown-content {
@@ -78,10 +79,8 @@ nav ul li:hover .dropdown-content {
     display: block;
 }
 
-.login a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 20px;
+nav ul li:hover .dropdown-content {
+    display: block;
 }
 
 /* Main Section Styles */
@@ -334,7 +333,7 @@ footer {
 }
 
 .footer-links ul li a {
-    color: var (--white);
+    color: var(--white);
     text-decoration: none;
 }
 
