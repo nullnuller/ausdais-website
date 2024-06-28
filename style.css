@@ -31,12 +31,10 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 60px; /* Ensure consistent header height */
 }
 
 header .logo img {
     max-width: 80px; /* Reduced logo size */
-    height: 60px; /* Ensure consistent logo height to match header */
 }
 
 nav ul {
@@ -45,8 +43,6 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 60px; /* Ensure nav items align with header height */
 }
 
 nav ul li {
@@ -58,13 +54,6 @@ nav ul li a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
-}
-
-.login a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 20px;
-    line-height: 60px; /* Ensure login link aligns with header height */
 }
 
 .dropdown-content {
@@ -90,7 +79,7 @@ nav ul li:hover .dropdown-content {
 
 /* Main Section Styles */
 main {
-    padding-top: 100px; /* Increased padding to ensure content is visible */
+    padding-top: 120px; /* Ensure content is not occluded by fixed header */
 }
 
 section {
