@@ -117,10 +117,28 @@ section {
     position: relative;
     z-index: 3;
     font-size: 2.5rem;
-    margin: 0;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 0, 0, 0.5); /* Slight background for better readability */
-    display: inline-block;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#about .btn {
+    background: var(--midnight-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#about .btn:hover {
+    background: var(--sapphire);
 }
 
 /* Services Section */
