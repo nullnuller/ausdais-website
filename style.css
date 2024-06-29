@@ -31,10 +31,12 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Fixed height */
 }
 
 header .logo img {
     max-width: 80px; /* Reduced logo size */
+    vertical-align: middle; /* Align the logo vertically */
 }
 
 nav ul {
@@ -43,6 +45,8 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height to center align items */
 }
 
 nav ul li {
@@ -54,6 +58,14 @@ nav ul li a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    padding: 10px 0; /* Padding to increase clickable area */
+}
+
+.login a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 .dropdown-content {
@@ -79,7 +91,7 @@ nav ul li:hover .dropdown-content {
 
 /* Main Section Styles */
 main {
-    padding-top: 120px; /* Ensure content is not occluded by fixed header */
+    padding-top: 70px; /* Ensure content is not occluded by fixed header */
 }
 
 section {
@@ -216,7 +228,7 @@ section {
 
 .product .btn {
     background: var(--sapphire);
-    color: var(--white);
+    color: var (--white);
     padding: 10px 15px;
     border: none;
     cursor: pointer;
@@ -351,7 +363,7 @@ footer {
 }
 
 /* Responsive Design */
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .product-grid,
     .services-grid,
     .footer-links {
@@ -370,7 +382,7 @@ footer {
     }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
     .product-grid,
     .services-grid,
     .footer-links {
