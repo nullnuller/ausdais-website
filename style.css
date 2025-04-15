@@ -119,7 +119,7 @@ section {
 
 #hero::after {
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* Darkened overlay */
     position: absolute;
     top: 0;
     left: 0;
@@ -162,10 +162,10 @@ section {
 #about .btn {
     background: var(--midnight-blue);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 10px 15px; /* Standardized padding */
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Standardized font size */
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
@@ -236,7 +236,7 @@ section {
 }
 
 .product {
-    background: var(--midnight-blue);
+    background: #1E60C8; /* Lighter blue for better contrast */
     padding: 20px;
     border-radius: 5px;
     text-align: center;
