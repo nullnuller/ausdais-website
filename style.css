@@ -151,6 +151,14 @@ section {
     padding: 50px 0;
 }
 
+#about p {
+    max-width: 65ch; /* Limit line length to ~65 characters */
+    margin-left: auto; /* Center the paragraph block */
+    margin-right: auto;
+    text-align: left; /* Align text left within the centered block */
+}
+
+
 #about .btn {
     background: var(--midnight-blue);
     color: var(--white);
