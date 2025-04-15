@@ -349,6 +349,14 @@ footer {
     text-align: left; /* Align text left within the centered block */
 }
 
+
+.about-section p {
+    max-width: 65ch; /* Limit line length to ~65 characters */
+    margin-left: auto; /* Center the paragraph block */
+    margin-right: auto;
+    text-align: left; /* Align text left within the centered block */
+}
+
     margin-bottom: 20px;
 
 #about-ausdais p {
