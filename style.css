@@ -109,6 +109,18 @@ section {
     margin-bottom: 20px;
 }
 
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 }
 
 #hero {
@@ -385,6 +397,10 @@ footer {
 .research-section .research-content,
 .about-section .about-content {
     flex: 1;
+}
+
+.about-content p {
+    max-width: 65ch; /* Limit line length to ~65 characters */
 }
 
 /* Responsive Design */
