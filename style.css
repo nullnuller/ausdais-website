@@ -411,6 +411,11 @@ footer {
         nav {
             position: absolute;
             top: 100%; /* Position below header */
+
+.research-content p {
+    max-width: 65ch;
+}
+
             left: 0;
             width: 100%;
             background: var(--midnight-blue);
